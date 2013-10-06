@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <style>
+      body {
+        height: 100%;
+        width: 100%;
+        font-size: 16px;
+        height: 35em;
+        
+        font-family: helvetica;
+      }
+      h1 {
+        text-align: center;
+      }
+      .stage {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+      }
+
+      .story {
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: inline-block;
+        width: 20%;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 1em;
+        color: #FFF;
+        vertical-align: top;
+      }
+        
+        
+      .smuby {
+        background-image: url(../img/smuby-background.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 250px;
+        height: 200px;
+
+        position: relative;
+        -webkit-transform: scale(0.5);
+       }
+
+
+       .smuby:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+        width: 100px;
+        height: 100px;
+
+        -webkit-animation: bob 1s infinite;
+       }     
+
+       .smuby-glad:after {
+        background-image: url(../img/smuby-glad.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+       }
+
+       .smuby-angry:after {
+        background: url(../img/smuby-angry.png) no-repeat;
+        background-size: contain;
+       }
+
+       @-webkit-keyframes bob {
+        0% {
+          margin-left: -50px;
+        }
+        50% {
+          margin-left: -54px;
+          
+        }
+        100% {
+          margin-left: -50px;
+        }
+      }
+
+      .sun {
+        background-image: url(../img/sun-background.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 250px;
+        height: 200px;
+        z-index: 1;
+
+        position: relative;
+        -webkit-transform: scale(0.5);
+        opacity: 50;
+       }
+
+       .sun:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -30px;
+        margin-top: -30px;
+        width: 60px;
+        height: 60px;
+
+        -webkit-animation: bob 1s infinite;
+       }
+
+       .sun-glad:after {
+        background: url(../img/sun-glad.png) no-repeat;
+        background-size: contain;
+       }
+
+
+       #stage-1 .sky {
+        height: 75%;
+       }
+
+
+       #stage-1 .desert {
+        height: 25%;
+        position: relative;
+       }
+
+       #stage-1 .desert .horizon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        background: url('../img/desert-horizon.png');
+        background-size: contain;
+        height: 5%;
+       }
+
+    </style>
+  </head>
+
+  <body>
+    <h1> The desert </h1>
+    <div class="stage">
+        <div id="stage-1">
+          <div class="sky">
+            <div class="smuby smuby-angry">
+            </div>
+            <div class="sun sun-glad">
+            </div>
+          </div>
+          <div class="desert">
+            <div class="horizon">
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="story">
+        There was upon a time ...
+    </div>
+  </body>
+</html>
