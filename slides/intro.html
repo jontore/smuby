@@ -139,31 +139,43 @@
         -webkit-animation: bob 1s infinite;
        }
 
-       .sun-glad:after {
+      .sun-glad:after {
         background: url(../img/sun-glad.png) no-repeat;
+        background-size: contain;
+       }
+
+      .sun-angry:after {
+        background: url(../img/sun-angry.png) no-repeat;
+        background-size: contain;
+       }
+
+      .sun-normal:after {
+        background: url(../img/sun-normal.png) no-repeat;
+        background-size: contain;
+       }
+
+      .sun-suprised:after {
+        background: url(../img/sun-suprised.png) no-repeat;
         background-size: contain;
        }
 
 
        #stage-1 .sky {
-        height: 75%;
+        height: 100%;
        }
 
 
-       #stage-1 .desert {
-        height: 25%;
-        position: relative;
-       }
-
-       #stage-1 .desert .horizon {
+       #stage-1 .berlin {
         position: absolute;
         top: 0;
-        right: 0;
+        bottom: 0;
         left: 0;
-        background: url('../img/desert-horizon.png');
-        background-size: contain;
-        height: 5%;
+        right: 0;
+        z-index: -1;
+        background: url(../img/berlin-background.png) no-repeat;
+        background-size: cover;
        }
+
 
        #stage-1 .smuby {
         top: 40%;
@@ -177,8 +189,6 @@
         /*-webkit-animation: rise 20s;*/
        }
 
-
-
     </style>
   </head>
 
@@ -187,14 +197,12 @@
     <div class="stage">
         <div id="stage-1">
           <div class="sky">
-            <div class="smuby smuby-angry ">
+            <div class="smuby smuby-normal ">
             </div>
-            <div class="sun sun-glad">
+            <div class="sun sun-suprised">
             </div>
           </div>
-          <div class="desert">
-            <div class="horizon">
-            </div>
+          <div class="berlin">
           </div>
         </div>
     </div>
