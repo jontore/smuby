@@ -79,6 +79,48 @@
         background-size: contain;
        }
 
+       .star {
+        background-image: url(../img/star-background.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 250px;
+        height: 200px;
+
+        position: absolute;
+       }
+
+       .star:after {
+        content: '';
+        position: absolute;
+        top: 65px;
+        left: 120px;
+        width: 60px;
+        height: 60px;
+
+        -webkit-animation: bob 1s infinite;
+       }
+
+       .star-glad:after {
+        background-image: url(../img/star-smile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+       }
+
+       .star-angry:after {
+        background: url(../img/star-angry.png) no-repeat;
+        background-size: contain;
+       }
+
+       .star-smile:after {
+        background: url(../img/star-smile.png) no-repeat;
+        background-size: contain;
+       }
+
+       .star-normal:after {
+        background: url(../img/star-content.png) no-repeat;
+        background-size: contain;
+       }
+
        @-webkit-keyframes bob {
         0% {
           margin-left: -50px;
@@ -189,6 +231,11 @@
         /*-webkit-animation: rise 20s;*/
        }
 
+       #stage-1 .star {
+        top: 5%;
+        right: 15%;
+       }
+
     </style>
   </head>
 
@@ -199,6 +246,8 @@
             <div class="smuby smuby-normal ">
             </div>
             <div class="sun sun-suprised">
+            </div>
+            <div class="star star-glad"
             </div>
           </div>
           <div class="berlin">
