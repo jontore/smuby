@@ -1,0 +1,167 @@
+.smuby {
+  background-image: url(../img/smuby-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 200px;
+
+  position: absolute;
+  -webkit-transform: scale(0.5);
+ }
+
+
+ .smuby:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  width: 100px;
+  height: 100px;
+
+  -webkit-animation: bob 1s infinite;
+ }     
+
+ .smuby-glad:after {
+  background-image: url(../img/smuby-glad.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+ }
+
+ .smuby-angry:after {
+  background: url(../img/smuby-angry.png) no-repeat;
+  background-size: contain;
+ }
+
+ .smuby-sad:after {
+  background: url(../img/smuby-sad.png) no-repeat;
+  background-size: contain;
+ }
+
+ .smuby-normal:after {
+  background: url(../img/smuby-smile.png) no-repeat;
+  background-size: contain;
+ }
+
+ .star {
+  background-image: url(../img/star-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 200px;
+
+  position: absolute;
+ }
+
+ .star:after {
+  content: '';
+  position: absolute;
+  top: 65px;
+  left: 120px;
+  width: 60px;
+  height: 60px;
+
+  -webkit-animation: bob 1s infinite;
+ }
+
+ .star-glad:after {
+  background-image: url(../img/star-smile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+ }
+
+ .star-angry:after {
+  background: url(../img/star-angry.png) no-repeat;
+  background-size: contain;
+ }
+
+ .star-smile:after {
+  background: url(../img/star-smile.png) no-repeat;
+  background-size: contain;
+ }
+
+ .star-normal:after {
+  background: url(../img/star-content.png) no-repeat;
+  background-size: contain;
+ }
+
+.sun {
+  background-image: url(../img/sun-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 200px;
+  z-index: 1;
+
+  position: absolute;
+  -webkit-transform: scale(0.5);
+  opacity: 50;
+ }
+
+ .sun:after {
+  content: '';
+  position: absolute;
+  top: 65px;
+  left: 120px;
+  width: 60px;
+  height: 60px;
+
+  -webkit-animation: bob 1s infinite;
+ }
+
+.sun-glad:after {
+  background: url(../img/sun-glad.png) no-repeat;
+  background-size: contain;
+ }
+
+.sun-angry:after {
+  background: url(../img/sun-angry.png) no-repeat;
+  background-size: contain;
+ }
+
+.sun-normal:after {
+  background: url(../img/sun-normal.png) no-repeat;
+  background-size: contain;
+ }
+
+.sun-suprised:after {
+  background: url(../img/sun-suprised.png) no-repeat;
+  background-size: contain;
+ }
+
+  @-webkit-keyframes bob {
+  0% {
+    margin-left: -50px;
+  }
+  50% {
+    margin-left: -54px;
+    
+  }
+  100% {
+    margin-left: -50px;
+  }
+}
+
+
+ @-webkit-keyframes left {
+  0% {
+    left: 30%;
+  }
+  50% {
+    left: 60%;
+    
+  }
+  100% {
+    left: 30%;
+  }
+}
+
+@-webkit-keyframes rise {
+  0% {
+    -webkit-transform: rotate(-90deg) scale(0.1);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(0.5);
+  }
+}
