@@ -10,6 +10,13 @@ body {
 h1 {
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #FFF;
+}
+
 .stage {
   display: inline-block;
   width: 100%;
@@ -17,13 +24,18 @@ h1 {
   vertical-align: top;
 }
 
-.story {
-  position: fixed;
+.left {
+  position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
+  width: 20em;
+}
+
+.story {
   display: inline-block;
-  width: 30%;
+  height: 100%;
+  margin-bottom: 2em;
   background-color: rgba(100, 100, 100, 0.8);
   color: #FFF;
   vertical-align: top;
@@ -36,25 +48,38 @@ h1 {
   line-height: 1.2em;
 }
 
-.story .nav a {
-  position: fixed;
+.nav {
+  position: absolute;
   background-color: #444;
-  height: 3em;
+  height: 2em;
   width: 100%;
   bottom: 0;
   margin-top: -0.5em;
-  vertical-align: middle;
-  text-decoration: none;
-  color: #FFF;
 }
 
-.story .nav span {
+.nav a {
   position: absolute;
   top: 50%;
-  left: 50%;
   margin-top: -0.5em;
+  z-index: 2;
+  width: 100%;
 }
 
+.nav .nav-inner {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 20em;
+  background-color: #777;
+}
+
+
+.nav:hover .nav-inner {
+  height: 100%;
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  transition:all 1.0s ease-in-out;
+}
 
 .background {
   position: absolute;
