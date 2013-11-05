@@ -4,11 +4,14 @@ body {
   font-size: 16px;
   height: 35em;
   
-  font-family: georgia, helvetica neue;
+  font-family: "HelveticaNeue-Thin", Arial;
+  letter-spacing: 0.1em;
 }
 
 h1 {
   text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.15em;
 }
 
 a {
