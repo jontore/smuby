@@ -48,6 +48,12 @@
   background-size: contain;
  }
 
+ .smuby-rain {
+  background: url(../img/smuby-rain.png) no-repeat;
+  background-size: contain;
+ }
+
+
  .star {
   background-image: url(../img/star-background.png);
   background-repeat: no-repeat;
@@ -138,6 +144,51 @@
 
 .sun-suprised:after {
   background: url(../img/sun-suprised.png) no-repeat;
+  background-size: contain;
+ }
+
+
+ .beli {
+  background-image: url(../img/beli.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 387px;
+  height: 636px;
+  z-index: 1;
+  
+  opacity: 50;
+
+  position: absolute;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+ }
+
+ .beli:after {
+  content: '';
+  position: absolute;
+  top: 62px;
+  left: 185px;
+  width: 150px;
+  height: 120px;
+
+  -webkit-animation: bob 1s infinite;
+  -moz-animation: bob 1s infinite;
+  animation: bob 1s infinite;
+ }
+
+.beli-smile:after {
+  background: url(../img/beli-smile.png) no-repeat;
+  background-size: contain;
+ }
+
+.beli-happy:after {
+  background: url(../img/beli-happy.png) no-repeat;
+  background-size: contain;
+ }
+
+.beli-super-happy:after {
+  background: url(../img/beli-super-happy.png) no-repeat;
   background-size: contain;
  }
 
