@@ -11,6 +11,11 @@
   transform: scal(0.5);
  }
 
+ .smuby-lightning {
+   background-image: url(../img/smuby-lightning.png);
+   height: 300px;
+ }
+
 
  .smuby:after {
   content: '';
@@ -153,7 +158,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   width: 387px;
-  height: 636px;
+  height: 700px;
   z-index: 1;
   
   opacity: 50;
@@ -167,14 +172,10 @@
  .beli:after {
   content: '';
   position: absolute;
-  top: 62px;
-  left: 185px;
+  top: 133px;
+  left: 135px;
   width: 150px;
   height: 120px;
-
-  -webkit-animation: bob 1s infinite;
-  -moz-animation: bob 1s infinite;
-  animation: bob 1s infinite;
  }
 
 .beli-smile:after {
